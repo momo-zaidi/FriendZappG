@@ -871,14 +871,23 @@ fieldset#body {
 	-moz-border-radius: 5px 5px 0 0;
 	-o-border-radius: 5px 5px 0 0;
 }
+.sign_in input[type="text"]{
+    background:#fff;       
+}
 .sign_in input[type="submit"]{
     background:#e64c65;       
 }
 .sign_in input[type="submit"]:hover{
-        background: #d4465d;
+    background: #d4465d;
 }
 .sign_in h4{
 	margin-top:20px;
+}
+.sign_in h2{
+	font-size:200%;
+	color:#fff;
+	margin-bottom:20px;
+	:Verdana;
 }
 .sign_in h4 a{
 	font-size:1.1em;
@@ -891,6 +900,15 @@ fieldset#body {
 .sign_in h4 a:hover{
 	color:#FFF;
 	text-decoration:underline;
+}
+.sign-in td{
+	color:#fff;
+	text-align:left;
+	text-transform: uppercase;
+}
+.sign-in table{
+	margin-left:auto;
+	margin-right:auto;
 }
 .signin_facebook{
 	background:#e64c65;
@@ -985,6 +1003,7 @@ fieldset#body {
 .date_events td{
 	border-color:#1a4e95;
 	border-style:solid;
+
 	
 }
 #title_event{

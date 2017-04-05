@@ -19,26 +19,71 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>			       
 	  <div class="main">  
 	  <img src="images/baniereFZ.gif" alt="" />
-	    <div class="wrap">    	    
-            <div class="column_right">
+	    <div class="wrap">       
             	 <div class="column_right_grid sign-in">
-				 	<div class="sign_in">
-				       <h3>Add you event</h3>
-					    <form>
-					    	<span>
-					 	    <input type="text" value="Name of your event">
-					 	    </span>
-					 	    <span>
-					 	     <input type="date" name="date_event">
-					 	    </span>
-					 		<input type="submit" class="my-button" value="Sign In">
+				 	<div class="sign_in">					
+				       <h2>Add an event</h2>					 
+					    <form>						
+					    	<table>
+								<tr>									
+									<td>
+										Name
+									</td>
+									<td>
+										<input name="name_event" value="">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Date
+									</td>
+									<td>
+										<input type="date" name="date_event">
+									</td>									
+								</tr>
+								<tr>
+									<td>
+										Heure début
+									</td>
+									<td>
+										<input type="time" name="hour_event-begin">
+									</td>									
+								</tr>
+								<tr>
+									<td>
+										Heure fin
+									</td>
+									<td>
+										<input type="time" name="hour_event-end">
+									</td>									
+								</tr>
+								<tr>
+									<td>
+										Image
+									</td>
+									<td>
+										<input type="file" name="background" />
+									</td>									
+								</tr>
+								<tr>
+									<td>
+										Guest
+									</td>
+									<td>
+										
+									</td>									
+								</tr>
+							</table>
+							<br/>						
+							<input type="submit" class="my-button" value="Sign In">							
 					 	</form>
+						
 					       <h4><a href="#">Forget Password?</a></h4>				   
-          		       </div>
-          		 	  <div class="signin_facebook">
-					   	 <p><a href="#">  <i> <img src="images/facebook.png" alt="" /></i>Sign in with facebook</a></p>
-				      </div>
-				   </div>			 
+          		    </div>
+          		    <div class="signin_facebook">
+					   	 <p><a href="#">  <i> <img src="images/facebook.png" alt="" /></i>add event of facebook</a></p>
+				    </div>
+				  		 
              </div>
     	<div class="clear"></div>
  	 </div>
