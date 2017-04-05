@@ -95,8 +95,9 @@
 	-moz-border-radius: 2em;
 	-o-border-radius: 2em;
 }
-.cal1 .clndr .clndr-table tr .day.today:hover {
-  	color: #FFF;
+.cal1 .clndr .clndr-table tr .day:hover {
+  	background: #3468af;
+	border-radius: 2em;
 }
 .cal1 .clndr .clndr-table tr .day.today.event {
      background: #EC3D68;

@@ -5,12 +5,12 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
  /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,caption,tbody,tfoot,thead,th,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-table{border-collapse:collapse;border-spacing:0;}
+table{border-bottom:none;}
 /* start editing from here */
 a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */
@@ -955,9 +955,10 @@ fieldset#body {
 	margin-top:30px;
 	padding:0 0 2em 0;
 	background:#3468af;
+	color: #FFF;
 }
 .date_events h3 {
-	color: #FFF;
+	margin-bottom:20px;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	padding: 20px 20px;
@@ -968,15 +969,39 @@ fieldset#body {
 	-moz-border-radius: 5px 5px 0 0;
 	-o-border-radius: 5px 5px 0 0;
 }
-.date_events h3 a#slide_prev{
-	float:left;
+.date_events table{
+	background-color:#1a4e95;
+	margin-right:5px;
+	width:100%;
 }
-.date_events h3 a#slide_next{
-	float:right;
+.date_events tr{
+	text-align:left;
+	vertical-align:middle;
+	margin-left:5px;
+	margin-bottom:5px;
+	background-color:#1a4e95;
+	
 }
-.event_dates li{
-	font-size:10em;
-	color:#FFF;
+.date_events td{
+	border-color:#1a4e95;
+	border-style:solid;
+	
+}
+#title_event{
+	font-size:170%;
+}
+#col2{
+	border-left-color:#FFF;
+	border-left:solid;
+	
+}
+#orga{
+	text-align:right;
+}
+#interligne{
+	background-color:#3468af;
+	border-style:solid;
+	border-color:#3468af;
 }
 .button a{
 	display:inline-block;

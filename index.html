@@ -16,7 +16,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/login.js"></script>
 <script type="text/javascript" src="js/Chart.js"></script>
  <script type="text/javascript" src="js/jquery.easing.js"></script>
- <script type="text/javascript" src="js/jquery.ulslide.js"></script>
  <!--GOOGLE MAPS -->
 <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQryEa7kINo9J9O3h0mHAK0KzbYd3n40c&callback=initMap">
@@ -84,7 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    		 	   <div class="menu_box_list">
 				      		<ul>
 						  		<li><a href="#" class="messages"><span>Messages</span><label class="digits">24</label><div class="clear"></div></a></li>
-						  		<li class="active"><a href="#" class="invites"><span>Invites</span><label class="digits active">3</label><div class="clear"></div></a></li>
+						  		<li><a href="#" class="invites"><span>Invites</span><label class="digits">3</label><div class="clear"></div></a></li>
 						  		<li><a href="#" class="events"><span>Events</span><label class="digits">5</label><div class="clear"></div></a></li>
 						  		<li><a href="#" class="account_settings"><span>Account Settings</span></a></li>
 						  		<li><a href="#" class="statistics"><span>Statistics</span></a></li>						  	
@@ -125,26 +124,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		       <div class="social_networks">
 				      		<ul>
 				      			<li><a href="#" class="facebook"><i><img src="images/facebook_icon.png" alt="" /></i> <span>Share to Facebook</span><div class="clear"></div></a></li>
-				      			<li><a href="#" class="twitter"><i><img src="images/tweets.png" alt="" /></i> <span>Share to Twitter</span><div class="clear"></div></a></li>
-				      			<li><a href="#" class="googleplus"><i><img src="images/google+.png" alt="" /></i> <span>Share to Google+</span><div class="clear"></div></a></li>
-				    		</ul>
+				      		</ul>
 		        </div>	           
 		       
     	    </div>
     	    
-            <div class="column_right">
-            	<div class="column_right_grid">
-                 <div class="newsletter">
-				   <h3>Join the newsletter</h3>
-					    <form>
-					    	<span>
-					 	     <i><img src="images/mail.png" alt="" /></i>
-					 	     <input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
-					 	    </span>			 	    
-					 		<input type="submit" class="my_button" value="Subscribe">
-					 	</form>
-				   </div>
-			   </div>				 
+            <div class="column_right">            				 
 				   <div class="column_right_grid downloading_uploading">
                       <ul>
 					      <li>                              
@@ -170,58 +155,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </ul>
 				   </div>
 				   <div class="column_right_grid date_events">
-				     	  <h3><a href="#" id="slide_prev"><img src="images/arrow-left.png" alt="" /></a> Wednesday <a href="#" id="slide_next"><img src="images/arrow-right.png" alt="" /></a></h3>
-				     	 		<ul id="slide" class="event_dates">					            
-						            <li>26</li>
-						            <li>25</li>
-						            <li>24</li>
-						            <li>23</li>
-						            <li>22</li>
-						            <li>21</li>
-						            <li>20</li>
-						            <li>19</li>
-						            <li>18</li>
-						            <li>17</li>
-						            <li>16</li>
-						            <li>15</li>
-						            <li>14</li>
-						            <li>13</li>
-						            <li>12</li>
-						            <li>11</li>
-						            <li>10</li>
-						            <li>9</li>
-						            <li>8</li>
-						            <li>7</li>
-						            <li>6</li>
-						            <li>5</li>
-						            <li>4</li>
-						            <li>3</li>
-						            <li>2</li>
-						            <li>1</li>
-						            <li>31</li>
-						            <li>30</li>
-						            <li>29</li>
-						            <li>28</li>
-						            <li>27</li>
-						        </ul>
-						         <div class="button"><a href="#">Add Event</a></div>											 				
-				           <script type="text/javascript">
-				            $(function() {						
-				                $('#slide').ulslide({
-				                   
-									effect: {
-										type: 'carousel', // slide or fade
-				                        axis: 'x',        // x, y
-										showCount:1
-									},
-				                    nextButton: '#slide_next',
-				                    prevButton: '#slide_prev',
-				                    duration: 800,
-				                    /*autoslide: 2000,*/
-									easing: 'easeOutBounce'
-				                });
-				            });
-				        </script>
+				     	    <h3>Events of<br/>
+								<div id="date_event">
+									<script>
+										var now= new Date();
+										
+										$('#date_event').html(now.getDate()+" "+moment().weekday(now.getDay()).format('dddd')+" "+moment().weekday(now.getMonth()).format('MMMM')+" "+now.getFullYear());
+									</script>
+								</div> 
+						    </h3>
+							
+								<table>
+									<tr>
+										<td rowspan="2" id="col2">
+											<img src="images/event.png" height="100" width="150" alt="">
+										</td>									
+										<td id="orga">										
+											Par flavio
+										</td>									
+									</tr>
+									<tr>
+										<td id="title_event">
+											Party one
+										</td>
+									</tr>
+									<tr><td id="interligne" colspan="2"></td></tr>						
+									
+									<tr>
+										<td rowspan="2" id="col2">
+											<img src="images/event.png" height="100" width="150" alt="">
+										</td>
+										<td id="orga">	
+											Par Deni 
+										</td>										
+									</tr>
+									<tr>
+										<td id="title_event">
+											Projet X
+										</td>
+									</tr>
+								</table>
+							
+								<br/>
+						         <div class="button"><a href="#">Add Event</a></div>			          
+				        
 				    </div>
 				   <div class="column_right_grid calender">
                       <div class="cal1"> </div>

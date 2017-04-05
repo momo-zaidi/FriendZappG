@@ -458,6 +458,7 @@
       if(self.options.clickEvents.click) {
         var target = self.buildTargetObject(event.currentTarget, true);
         self.options.clickEvents.click.apply(self, [target]);
+		
       }
       // if adjacentDaysChangeMonth is on, we need to change the month here.
       if(self.options.adjacentDaysChangeMonth) {

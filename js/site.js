@@ -32,7 +32,12 @@ $(document).ready( function() {
         if($(target.element).hasClass('inactive')) {
           console.log('not a valid datepicker date.');
         } else {
-          console.log('VALID datepicker date.');
+		  var dateClick =target.date._d;
+		  var annee=dateClick.getFullYear();
+		  var mois=moment().weekday(dateClick.getMonth()).format('MMMM');
+		  var jour=moment().weekday(dateClick.getDay()).format('dddd');
+		  
+		  $('#date_event').html(dateClick.getDate()+" "+jour+" "+mois+" "+annee);	
         }
       },
       nextMonth: function() {
