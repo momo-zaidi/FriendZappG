@@ -11,3 +11,11 @@
                           <strong>Remplissez les champs !</strong>
                           </div>";
 				}
+	
+ $prenom=$_POST[prenom];
+ $nom=$_POST[nom];
+ $mail=$_POST[maill];
+ $password=$_POST[pass];
+ $age=$_POST[datenaiss];
+ print("$prenom $nom $mail $password $age");
+ ?>
