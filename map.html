@@ -9,6 +9,7 @@ body { height: 100%; margin: 0; padding: 0 }
 #map-canvas { height: 100%}
 
 
+
 </style>
 <script type="text/javascript" src="cordova.js"></script>
 
@@ -22,6 +23,10 @@ body { height: 100%; margin: 0; padding: 0 }
 	var geocoder;
 	var map;
 	var autocomplete;
+	var geolocation;
+	var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var labelIndex = 0;
+	
 	
 	
 	
@@ -35,7 +40,7 @@ Mettre un marqueur à notre position
 	geocoder = new google.maps.Geocoder();
 	
 	function onSuccess(position) {
-		var geolocation = { 
+	    geolocation = { 
 				lat: position.coords.latitude,
 				lng: position.coords.longitude
 			};		
@@ -120,6 +125,44 @@ Mettre un marqueur à notre position
 	
  }
  
+ function centerOnMyPos(){
+	$.ajax({
+	   url: 'map.html',
+	   error: function() {
+		  $('#info').html('<p>Recenter has failed</p>');
+	   },
+	   
+	   success: function() {
+			geolocate();
+			
+	   }
+	   
+	});
+	
+ }
+ 
+ function getFriends(){
+	//comparer 2 pos
+	$.ajax({
+	   url: 'getFriends.php',
+	   data: {
+		  format: 'json'
+	   },
+	   error: function() {
+		  $('#info').html('<p>An error has occurred</p>');
+	   },
+	   dataType: 'json',
+	   success: function(data) {
+			var myLatlng = new google.maps.LatLng(data);		
+			var mapOptions = {zoom: 12,center: myLatlng}
+			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			var marker = new google.maps.Marker({position: myLatlng,map: map,label: labels[labelIndex++ % labels.length],});
+			
+	   },
+	   type: 'POST'
+	});
+	
+ }
   
 
 
@@ -129,6 +172,9 @@ Mettre un marqueur à notre position
     <input id="address" type="textbox" placeholder="Search for places">
     <input type="button" value="Search" onclick="codeAddress()">
 	<input type="button" value="share pos" onclick="shareLocation()">
+	<input type="button" value="recenter" onclick="centerOnMyPos()">
+	<input type="button" value="get friends" onclick="getFriends()">
+	<div id="info"></div>
   </div>
   <div id="map-canvas"></div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgNJYFXcwycOMB7Gt4_DYXaMRTWK1rf7E&libraries=places&callback=initAutocomplete"
