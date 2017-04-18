@@ -38,11 +38,9 @@ Mettre un marqueur à notre position
 		var geolocation = { 
 				lat: position.coords.latitude,
 				lng: position.coords.longitude
-			};
+			};		
 		
-
-		//Google Maps
-		var myLatlng = new google.maps.LatLng(geolocation);
+		var myLatlng = new google.maps.LatLng(geolocation);		
 		var mapOptions = {zoom: 12,center: myLatlng}
 		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 		var marker = new google.maps.Marker({position: myLatlng,map: map});
@@ -98,7 +96,31 @@ Mettre un marqueur à notre position
         
       }
 
+ function shareLocation() {
+	  
+	navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
 	
+	function onSuccess(position) {
+		var geolocation = { 
+				lat: position.coords.latitude,
+				lng: position.coords.longitude
+			};				
+		var myLatlng = new google.maps.LatLng(geolocation);		
+		alert(JSON.stringify(myLatlng));		
+	}
+	
+	function onError(error) {
+		alert('code: ' + error.code + '\n' +
+		'message: ' + error.message + '\n');
+	}
+	google.maps.event.addDomListener(window, 'load', onSuccess);
+   
+  
+	
+	
+ }
+ 
+  
 
 
 </script>
@@ -106,10 +128,10 @@ Mettre un marqueur à notre position
   <div>
     <input id="address" type="textbox" placeholder="Search for places">
     <input type="button" value="Search" onclick="codeAddress()">
+	<input type="button" value="share pos" onclick="shareLocation()">
   </div>
   <div id="map-canvas"></div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgNJYFXcwycOMB7Gt4_DYXaMRTWK1rf7E&libraries=places&callback=initAutocomplete"
         async defer></script>
 </body>
 </html>
-
