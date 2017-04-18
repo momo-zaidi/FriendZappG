@@ -72,23 +72,23 @@ Mettre un marqueur à notre position
   }
   
   
-  function getPos(){
-	navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });		
-	function onSuccess(position) {
-	    geolocation = { 
-				lat: position.coords.latitude,
-				lng: position.coords.longitude
-			};		
+ <!-- <!-- <!--  function getPos(){ -->
+	<!-- navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });		 -->
+	<!-- function onSuccess(position) { -->
+	    <!-- geolocation = {  -->
+				<!-- lat: position.coords.latitude, -->
+				<!-- lng: position.coords.longitude -->
+			<!-- };		 -->
 		
-		var myLatlng = new google.maps.LatLng(geolocation);	
-		return myLatlng;
-	}		
-	function onError(error) {
-		alert('code: ' + error.code + '\n' +
-		'message: ' + error.message + '\n');
-	}	
+		<!-- var myLatlng = new google.maps.LatLng(geolocation);	 -->
+		<!-- return myLatlng; -->
+	<!-- }		 -->
+	<!-- function onError(error) { -->
+		<!-- alert('code: ' + error.code + '\n' + -->
+		<!-- 'message: ' + error.message + '\n'); -->
+	<!-- }	 -->
 		
-  }
+  <!-- } --> --> -->
   
   
 /* Trouver une adresse */
@@ -156,7 +156,7 @@ Mettre un marqueur à notre position
 	   success: function() {
 			var Coordinates = getPos();
 			var mapOptions = {zoom: 12,center: Coordinates}
-			map = google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 			
 	   }
 	   
