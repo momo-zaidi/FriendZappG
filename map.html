@@ -154,9 +154,7 @@ Mettre un marqueur à notre position
 	   },
 	   
 	   success: function() {
-			var Coordinates = getPos();
-			var mapOptions = {zoom: 12,center: Coordinates}
-			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			initialize();
 			
 	   }
 	   
