@@ -82,13 +82,14 @@ Mettre un marqueur à notre position
 				lng: position.coords.longitude
 			};
 			
-		return geolocation;	
+			
 	}
 	
 	function onError(error) {
 		alert('code: ' + error.code + '\n' +
 		'message: ' + error.message + '\n');
 	}
+	return geolocation;
 		
   }
   
