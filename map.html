@@ -77,12 +77,11 @@ Mettre un marqueur à notre position
 	geocoder = new google.maps.Geocoder();
 
 	function onSuccess(position) {
-		geolocation = { 
+		return geolocation = { 
 				lat: position.coords.latitude,
 				lng: position.coords.longitude
-			};
-			var latLng = [position.coords.latitude,position.coords.longitude];
-			return latLng;
+				};
+			
 			
 	}
 	
@@ -159,7 +158,7 @@ Mettre un marqueur à notre position
 	   
 	   success: function() {
 			var pos = getPos();
-			alert("lat" + pos[0] + "long" + pos[1]);
+			alert(JSON.stringify(pos));
 				
 				
 			
