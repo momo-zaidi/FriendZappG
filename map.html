@@ -81,8 +81,8 @@ Mettre un marqueur à notre position
 				lat: position.coords.latitude,
 				lng: position.coords.longitude
 			};
-			var jsonres = JSON.parse(geolocation);
-			return jsonres;
+			var latLng = [lat,lng];
+			return latLng;
 			
 	}
 	
@@ -159,7 +159,7 @@ Mettre un marqueur à notre position
 	   
 	   success: function() {
 			var pos = getPos();
-			alert(pos);
+			alert("lat" + pos[0] + "long" + pos[1]);
 				
 				
 			
