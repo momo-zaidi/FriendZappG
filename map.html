@@ -31,7 +31,7 @@
 		var geocoder;
 		var map;
 		var autocomplete;
-		var geolocation;
+		
 		var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		var labelIndex = 0;
 
@@ -48,7 +48,7 @@
 			geocoder = new google.maps.Geocoder();
 
 			function onSuccess(position) {
-				geolocation = {
+				var	geolocation = {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
@@ -86,11 +86,11 @@
 
 			function onSuccess(position) {
 
-				geolocation = {
+				var geolocation = {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
-				
+
 				geolocation = JSON.stringify(geolocation);
 				console.log(geolocation);
 
@@ -104,9 +104,6 @@
 				alert('code: ' + error.code + '\n' +
 					'message: ' + error.message + '\n');
 			}
-
-
-
 		}
 
 		function centerOnMyPos() {
@@ -115,16 +112,10 @@
 				error: function () {
 					$('#info').html('<p>Recenter has failed</p>');
 				},
-
 				success: function () {
 					var pos = getPos();
-					alert(pos + "en json");
-
-
-
+					alert(pos + " json");
 				}
-
-
 
 			});
 		}
@@ -211,8 +202,6 @@
 			});
 
 		}
-		
-		
 	</script>
 
 	<body onload="initialize()">
