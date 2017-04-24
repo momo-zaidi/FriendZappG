@@ -1,5 +1,4 @@
 <?php
-function getPos() {
 			navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
 			geocoder = new google.maps.Geocoder();
             
@@ -26,5 +25,5 @@ function getPos() {
 					'message: ' + error.message + '\n');
                 </script>
 			}
-		}
+		
 ?>
