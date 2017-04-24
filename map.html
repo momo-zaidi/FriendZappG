@@ -82,15 +82,16 @@
 
 		
 
-		function centerOnMyPos() {
+			function centerOnMyPos() {
 			$.ajax({
 				url: 'getPos.php',
 				error: function () {
 					$('#info').html('<p>Recenter has failed</p>');
 				},
-				success: function (pos) {
-					
-						alert(pos + " json");
+				success: function (text) {
+					var location = JSON.parse(text);
+					//location = JSON.stringify(text);
+					alert(text);
 					
 				}
 
