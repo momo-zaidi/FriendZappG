@@ -88,9 +88,10 @@
 				error: function () {
 					$('#info').html('<p>Recenter has failed</p>');
 				},
-				success: function ($pos) {
-					
-					echo ($pos + " json");
+				success: function (pos) {
+					<script>
+						alert(pos + " json");
+					</script>
 				}
 
 			});
