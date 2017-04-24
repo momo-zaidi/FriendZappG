@@ -179,7 +179,9 @@
 
 	<body onload="initialize()">
 		<div class="map_search">
-			<input id="address" type="textbox" placeholder="Search for places">
+			<span>
+				<input id="address" type="textbox" onfocus="this.placeholder='';" placeholder="Search for places" onblur="if (this.value == '') {this.placeholder = 'Search for places';}">
+			</span>			
 			<input type="button" value="Search" onclick="codeAddress()">
 			<input type="button" value="share pos" onclick="shareLocation()">
 			<input type="button" value="recenter" onclick="centerOnMyPos()">

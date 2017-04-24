@@ -354,17 +354,13 @@ fieldset#body {
 }
 .map_search{
 	z-index: 2;
-	background: #000;
+	background: #04366e;
 	position: fixed;
-	color:#fff;
+	color:#aaa;
 	width: 100%;
+	border-radius: 15px;
 }
-.map_search input[type="textbox"]{
-	height: 200px;
-	width: 65%;
-	font-size: 4em;
-	
-}
+
 /****** video Player *******/
 .video_palyer {
     margin-top:30px;
@@ -727,7 +723,7 @@ fieldset#body {
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
-.column_right_grid span{
+.column_right_grid span,.map_search span{
 	background:#fff;
 	border:1px solid #1F253D;
 	padding:5px 0;
@@ -750,7 +746,7 @@ fieldset#body {
 .column_right_grid span i img{
 	vertical-align:middle;
 }
-.column_right_grid input[type="text"],.column_right_grid input[type="password"],. _search input[type="textbox"]{
+.column_right_grid input[type="text"],.column_right_grid input[type="password"],.map_search input[type="textbox"]{
 	padding:10px;
     color:#aaa;
     font-size:1em;
@@ -761,6 +757,14 @@ fieldset#body {
     width:75%;  
     -webkit-apperance:none;
     font-family: 'ambleregular';
+}
+.map_search input[type="textbox"],.map_search input[type="button"]{
+    padding: 20px;
+    font-size: 3em;
+}
+.map_search input[type="button"]{
+    border-radius: 20px;
+    background-color: #fff;
 }
  .newsletter input[type="submit"],.sign_in input[type="submit"]{
 	padding:15px 2.5em;
