@@ -22,5 +22,6 @@
 					'message: ' + error.message + '\n');
                 </script>
 			}
+			header('Content-Type: application/json');
 		
 ?>
