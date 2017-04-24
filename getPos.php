@@ -1,4 +1,5 @@
 <?php
+
 			navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
 			geocoder = new google.maps.Geocoder();
             
@@ -10,10 +11,10 @@
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
+				$data[] = array('latitude'=>position.coords.latitude, 'longitude'=>position.coords.longitude);
+				echo json_encode($data);
 
-				$geolocation = JSON.stringify($geolocation);
 				
-                echo $geolocation
 
 
 
