@@ -183,7 +183,7 @@
 		function getFriends() {
 			//comparer 2 pos
 			$.ajax({
-				url: 'getFriends.php',
+				url: 'getFriends.js',
 				data: {
 					format: 'json'
 				},
@@ -192,6 +192,7 @@
 				},
 				dataType: 'json',
 				success: function (data) {
+					console.log(data);
 					var myLatlng = new google.maps.LatLng(data);
 					var mapOptions = { zoom: 12, center: myLatlng }
 					map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
