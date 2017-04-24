@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Geo Location</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 	<style type="text/css">
 		html {
 			height: 100%
@@ -12,12 +13,9 @@
 		body {
 			height: 100%;
 			margin: 0;
-			padding: 0
-		}
-		
-		#map-canvas {
-			height: 100%
-		}
+			padding: 0;
+			background: #fff;
+		}	
 	</style>
 	<script type="text/javascript" src="cordova.js"></script>
 
@@ -34,10 +32,6 @@
 		
 		var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		var labelIndex = 0;
-
-
-
-
 		/*INITIALISER LA MAP	
 		Trouver notre position avec lat et lng
 		Mettre un marqueur à notre position
@@ -184,7 +178,7 @@
 	</script>
 
 	<body onload="initialize()">
-		<div>
+		<div class="map_search">
 			<input id="address" type="textbox" placeholder="Search for places">
 			<input type="button" value="Search" onclick="codeAddress()">
 			<input type="button" value="share pos" onclick="shareLocation()">
@@ -195,6 +189,9 @@
 		<div id="map-canvas"></div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgNJYFXcwycOMB7Gt4_DYXaMRTWK1rf7E&libraries=places&callback=initAutocomplete"
 		 async defer></script>
+
+		
 	</body>
+
 
 </html>

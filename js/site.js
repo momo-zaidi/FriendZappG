@@ -34,7 +34,7 @@ $(document).ready( function() {
         } else {
 		  var dateClick =target.date._d;
 		  var annee=dateClick.getFullYear();
-		  var mois=moment().weekday(dateClick.getMonth()).format('MMMM');
+		  var mois=moment().months(dateClick.getMonth()).format('MMMM');
 		  var jour=moment().weekday(dateClick.getDay()).format('dddd');
 		  
 		  $('#date_event').html(dateClick.getDate()+" "+jour+" "+mois+" "+annee);	

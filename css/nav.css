@@ -56,6 +56,7 @@
     -webkit-border-radius:2em;
     -moz-border-radius:2em;
     -o-border-radius:2em; 
+    z-index: 3;
 }
 .toggleMenu:hover{
 	background:#1F253D;
@@ -85,12 +86,13 @@
     	text-align:left;
     }
     .nav {
+     z-index: 3;
      list-style: none;
      *zoom: 1;
      width:100%;
 	 position: absolute;
 	 left: 0;
-	 background:#292F46;
+	 background:#04366e;
 	 top:95px;
 	 border-radius: 5px;
 	 -webkit-border-radius: 5px;

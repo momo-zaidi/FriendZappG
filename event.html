@@ -11,11 +11,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/clndr.css" type="text/css" />
+ <!----Calender -------->
+  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
 
+  <!----End Calender -------->
 </head>
-<body>			        
-	  <a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
+<body>	
+	<img src="images/event.png" alt="" class="imgE"/>		       
+	  <div class="main">  
+	  
 	    <div class="wrap">       
             	 <div class="column_right_grid sign-in">
 				 	<div class="sign_in">					
@@ -29,22 +33,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<td>
 										<input name="name_event" value="">
 									</td>
-								</tr>							
+								</tr>
 								<tr>
 									<td>
-										Début
+										Date
 									</td>
 									<td>
-										<input type="date" name="date_event-begin">
+										<input type="date" name="date_event">
+									</td>									
+								</tr>
+								<tr>
+									<td>
+										Heure début
+									</td>
+									<td>
 										<input type="time" name="hour_event-begin">
 									</td>									
 								</tr>
 								<tr>
 									<td>
-										Fin
+										Heure fin
 									</td>
 									<td>
-										<input type="date" name="date_event-end">
 										<input type="time" name="hour_event-end">
 									</td>									
 								</tr>
@@ -53,19 +63,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										Image
 									</td>
 									<td>
-										<input type="file" name="background"/>
+										<input type="file" name="background" />
 									</td>									
-								</tr>
-								<tr>
-									<td>
-										Type
-									</td>
-									<td>
-										<SELECT name="mode" size="1">
-										<OPTION>Public
-										<OPTION>Privée										
-										</SELECT>
-									</td>
 								</tr>
 								<tr>
 									<td>
@@ -78,7 +77,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</table>
 							<br/>						
 							<input type="submit" class="my-button" value="Sign In">							
-					 	</form>			   
+					 	</form>
+						
+					       <h4><a href="#">Forget Password?</a></h4>				   
           		    </div>
           		    <div class="signin_facebook">
 					   	 <p><a href="#">  <i> <img src="images/facebook.png" alt="" /></i>add event of facebook</a></p>
@@ -87,6 +88,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
              </div>
     	<div class="clear"></div>
  	 </div>
+   </div>
    <footer>
   		 <div class="copy-right">
 				<p>© 2013 Designed by <a href="http://graphicburger.com/flat-design-ui-components/" target="_blank">GraphicBurger</a>  • Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
