@@ -1,0 +1,22 @@
+<?php
+  function getFriends($id,$latitude,$longitude)
+  {
+    $friendInformation = array(); // Initialisation du tableau contenant les informations de l'utilisateur.
+
+    $friendInformation[1] = $id;  // Remplissage du tableau avec les paramètres.
+    $friendInformation[2] = $latitude;
+    $friendInformation[3] = $longitude;
+
+    $donnees = '{id: "'.$id.'", lat: "'.$latitude.'", lng: "'.$longitude.'"}';
+
+    echo 'Les données de l\' utilisateur '.$id.' : '.$donnees.'';
+  }
+
+  getFriends(1,'50 53.846','04 20.361');   // On Appelle la fonction en y introduisant les paramètres.
+
+  /* ------ Commentaires Vlad ------
+  *  donnees = {id: $id, lat: $latitude, lng: $longitude}
+  *  var location = JSON.stringify(donnees);
+  */
+
+?>
