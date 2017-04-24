@@ -8,6 +8,7 @@
 
 				
 				$data[] = array('latitude'=>position.coords.latitude, 'longitude'=>position.coords.longitude);
+				header('Content-Type: application/json');
 				echo json_encode($data);
 
 				
@@ -22,6 +23,6 @@
 					'message: ' + error.message + '\n');
                 </script>
 			}
-			header('Content-Type: application/json');
+			
 		
 ?>
