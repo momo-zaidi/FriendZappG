@@ -758,6 +758,7 @@ fieldset#body {
     -webkit-apperance:none;
     font-family: 'ambleregular';
 }
+/*********** MAP ***********/
 .map_search input[type="textbox"],.map_search input[type="button"]{
     padding: 20px;
     font-size: 3em;
@@ -765,6 +766,25 @@ fieldset#body {
 .map_search input[type="button"]{
     border-radius: 20px;
     background-color: #fff;
+}
+
+.pac-item-query {
+    font-size: 1em;
+    padding-right: 10px;
+    color: #fff;
+}
+.pac-item {
+    font-size: 1em;
+    line-height: normal;
+    color: white;
+}
+.pac-container {
+    background-color: #04366e;
+    font-size: 4em;
+    color: white;
+}
+.hdpi .pac-icon {
+    background-image: none;
 }
  .newsletter input[type="submit"],.sign_in input[type="submit"]{
 	padding:15px 2.5em;
