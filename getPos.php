@@ -6,11 +6,7 @@
 
 			function onSuccess(position) {
 
-				$geolocation = 
-                {
-					lat: position.coords.latitude,
-					lng: position.coords.longitude
-				};
+				
 				$data[] = array('latitude'=>position.coords.latitude, 'longitude'=>position.coords.longitude);
 				echo json_encode($data);
 
