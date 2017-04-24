@@ -2,6 +2,7 @@
 function getPos() {
 			navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
 			geocoder = new google.maps.Geocoder();
+            
 
 			function onSuccess(position) {
 
@@ -11,9 +12,9 @@ function getPos() {
 					lng: position.coords.longitude
 				};
 
-				geolocation = JSON.stringify(geolocation);
+				$geolocation = JSON.stringify($geolocation);
 				
-                echo geolocation
+                echo $geolocation
 
 
 
