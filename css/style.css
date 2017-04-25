@@ -347,19 +347,6 @@ fieldset#body {
 	font-size:0.7em;
 	vertical-align:top;
 }
-/****** Map *******/
-#map-canvas {
-	height: 100%;
-	margin-bottom: -50px;
-}
-.map_search{
-	z-index: 2;
-	background: #04366e;
-	position: fixed;
-	color:#aaa;
-	width: 100%;
-	border-radius: 15px;
-}
 
 /****** video Player *******/
 .video_palyer {
