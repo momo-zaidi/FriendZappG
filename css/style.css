@@ -804,6 +804,7 @@ fieldset#body {
     width: 50px;
     background-color: #04366e;
     border-radius: 30px;
+	-webkit-appearance: none;
 }
 
 .centerBtn{
