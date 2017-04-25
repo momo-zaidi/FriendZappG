@@ -1,5 +1,4 @@
 <?php
-				
 				if (isset($_POST['inscrire']))
 				{
 				
@@ -11,6 +10,8 @@
                           <strong>Remplissez les champs !</strong>
                           </div>";
 				}
+					else
+					{
 	
  $prenom=$_POST[prenom];
  $nom=$_POST[nom];
@@ -18,4 +19,11 @@
  $password=$_POST[pass];
  $age=$_POST[datenaiss];
  print("$prenom $nom $mail $password $age");
+
+
+}
+}
+
+
+
  ?>
