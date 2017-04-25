@@ -348,6 +348,7 @@ fieldset#body {
 	vertical-align:top;
 }
 
+
 /****** video Player *******/
 .video_palyer {
     margin-top:30px;
@@ -746,14 +747,52 @@ fieldset#body {
     font-family: 'ambleregular';
 }
 /*********** MAP ***********/
-.map_search input[type="textbox"],.map_search input[type="button"]{
+
+#map-canvas {
+	height: 100%;
+	margin-bottom: -50px;
+}
+.map_search{
+	z-index: 2;
+	background: #04366e;
+	position: fixed;
+	color:#aaa;
+	width: 100%;
+	border-radius: 15px;
+}
+.map_search input[type="textbox"]{
     padding: 20px;
-    font-size: 3em;
+    font-size: 3em;	
+	position : relative;
 }
-.map_search input[type="button"]{
-    border-radius: 20px;
-    background-color: #fff;
+.mapBtns {
+	  	position: absolute;
+        top:10%;
+        width: 100%;
+        z-index: 5;
+        background-color: #04366e;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+		border: none;
+		
+
+		
 }
+.mapBtns input[type="button"]{
+	width: 20%;
+	padding: 12px 28px;
+	font-size: 20px;
+	background-color: #04366e;
+	color:white;
+	border-radius: 12px 28px;
+	font-weight: bold;
+	box-shadow: 5px 2px 2px 2px;
+}
+
 
 .pac-item-query {
     font-size: 1em;
@@ -773,6 +812,8 @@ fieldset#body {
 .hdpi .pac-icon {
     background-image: none;
 }
+/***************************/
+
  .newsletter input[type="submit"],.sign_in input[type="submit"]{
 	padding:15px 2.5em;
 	color:#fff;
@@ -825,7 +866,7 @@ fieldset#body {
 	font-size:200%;
 	color:#fff;
 	margin-bottom:20px;
-	:Verdana;
+	
 }
 .sign_in h4 a{
 	font-size:1.1em;
@@ -1149,3 +1190,4 @@ fieldset#body {
 		right: 4.4em;
    }
 }
+
