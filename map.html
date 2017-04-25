@@ -178,17 +178,24 @@
 	</script>
 
 	<body onload="initialize()">
-		<div class="map_search">
-			<span>
-				<input id="address" type="textbox" onfocus="this.placeholder='';" placeholder="Search for places" onblur="if (this.value == '') {this.placeholder = 'Search for places';}">
-			</span>			
+		<div class="navBar">
+			<div class="map_search">
+				<span>
+					<input id="address" type="textbox" onfocus="this.placeholder='';" placeholder="Search for places" onblur="if (this.value == '') {this.placeholder = 'Search for places';}">
+				</span>			
+				<input class="buttonMap" type="button" value="Search" onclick="codeAddress()">
+				
+			</div>
+			<div class="mapBtns">
+				
+				<input class="buttonMap" type="button" value="share pos" onclick="shareLocation()">				
+				<input class="buttonMap" type="button" value="get friends" onclick="getFriends()">
+			</div>
 			
 		</div>
-		<div class="mapBtns">
-			<input type="button" value="Search" onclick="codeAddress()">
-			<input type="button" value="share pos" onclick="shareLocation()">
-			<input type="button" value="recenter" onclick="centerOnMyPos()">
-			<input type="button" value="get friends" onclick="getFriends()">
+		<div class="centerBtn">
+				<input type="button" onclick="centerOnMyPos()">
+				<img alt="" class="MyPosImg" src="images/myPosWhite.png">
 		</div>
 		<div id="info"></div>
 		<div id="map-canvas"></div>
