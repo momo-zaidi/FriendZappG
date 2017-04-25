@@ -805,6 +805,8 @@ fieldset#body {
     background-color: #04366e;
     border-radius: 30px;
 	-webkit-appearance: none;
+	background-image: url(../images/myPosWhite.png);
+    background-size: cover;
 }
 
 .centerBtn{
@@ -812,14 +814,6 @@ fieldset#body {
     bottom: 4%;
     right: 13%;
 	z-index: 50;
-}
-
-img.MyPosImg {
-    position: absolute;
-    top: 0;
-	left: 0;
-	width: 40px;
-	margin: 5px 0 0 5px;
 }
 
 .pac-item-query {
