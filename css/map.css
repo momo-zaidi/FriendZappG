@@ -1,0 +1,23 @@
+/*********** MAP ***********/
+html {
+        height: 100%
+}
+    
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}	
+.map_search input[type="textbox"],.map_search input[type="button"]{
+    padding: 20px;
+    font-size: 3em;
+}
+
+.mapBtns {
+    outline: none;
+    border-radius: 10px 5px;
+    background-color: #04366e;
+    font-weight: bold;
+    
+}
