@@ -33,10 +33,11 @@ if ($verification !=0)
 }
 else
 {    
+	add_user($prenom, $nom, $mail, $password, $age );
 	print "<div class='alert alert-success'>
                 <strong>Bienvenue $prénom</strong>
                 </div>";
-	AjouterUtilisateur();
+	
 	
 }
 
