@@ -18,7 +18,7 @@
  $mail=$_POST[maill];
  $password=$_POST[pass];
  $age=$_POST[datenaiss];
- print("$prenom $nom $mail $password $age");
+
 
 
 }
