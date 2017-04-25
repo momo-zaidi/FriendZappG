@@ -713,7 +713,7 @@ fieldset#body {
 }
 .column_right_grid span,.map_search span{
 	background:#fff;
-	margin:25px 25px;
+	margin:25px 25px 8px;
 	 border-radius:5px;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
@@ -757,6 +757,7 @@ fieldset#body {
     position: fixed;
     z-index: 99;
     width: 100%;
+	box-shadow: 0px 10px 5px #888888;
 }
 .map_search{
 	background: #04366e;
@@ -790,13 +791,16 @@ fieldset#body {
 .mapBtns input[type="button"]{
     width: 30%;
     margin: 0 30px;
+	outline: none;
+	padding: 5px 5px;
 }
 
 .map_search input[type="button"]{
     width: 20%;
     position: absolute;
-    top: 17%;
+    top: 20%;
 	padding: 9px 0px;
+	outline: none;
 }
 
 .centerBtn input{
@@ -807,6 +811,7 @@ fieldset#body {
 	-webkit-appearance: none;
 	background-image: url(../images/myPosWhite.png);
     background-size: cover;
+	outline: none;
 }
 
 .centerBtn{
