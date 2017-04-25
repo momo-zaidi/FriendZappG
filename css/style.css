@@ -713,8 +713,6 @@ fieldset#body {
 }
 .column_right_grid span,.map_search span{
 	background:#fff;
-	border:1px solid #1F253D;
-	padding:5px 0;
 	margin:25px 25px;
 	 border-radius:5px;
     -webkit-border-radius:5px;
@@ -727,6 +725,8 @@ fieldset#body {
 	-ms-transition: border-color 0.3s;
 	-moz-transition: border-color 0.3s;
 	-webkit-transition: border-color 0.3s;
+	float: left;
+	width: 70%;
  }
  .column_right_grid span:hover{
  	border:1px solid #11A8AB;
@@ -752,13 +752,17 @@ fieldset#body {
 	height: 100%;
 	margin-bottom: -50px;
 }
+
+.navBar{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
 .map_search{
-	z-index: 2;
 	background: #04366e;
-	position: fixed;
 	color:#aaa;
 	width: 100%;
-	border-radius: 15px;
+	float: left;
 }
 .map_search input[type="textbox"]{
     padding: 20px;
@@ -766,33 +770,52 @@ fieldset#body {
 	position : relative;
 }
 .mapBtns {
-	  	position: absolute;
-        top:10%;
-        width: 100%;
-        z-index: 5;
-        background-color: #04366e;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-		border: none;
-		
-
-		
+    width: 100%;
+    background-color: #04366e;
+    padding: 25px 0px;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+	float: left;
 }
-.mapBtns input[type="button"]{
-	width: 20%;
+
+.buttonMap{
 	padding: 12px 28px;
-	font-size: 20px;
-	background-color: #04366e;
-	color:white;
-	border-radius: 12px 28px;
-	font-weight: bold;
-	box-shadow: 5px 2px 2px 2px;
+    font-size: 32px;
+    background-color: #04366e;	
+	color: white;
+	border-radius: 6px;
+	border: 3px solid white;
 }
 
+.mapBtns input[type="button"]{
+    width: 30%;
+    margin: 0 30px;
+}
+
+.map_search input[type="button"]{
+    width: 20%;
+    position: absolute;
+    top: 17%;
+}
+
+.centerBtn input{
+    height: 150px;
+    width: 150px;
+    background-color: #04366e;
+    border-radius: 90px
+}
+
+.centerBtn{
+    position: fixed;
+    bottom: 4%;
+    right: 8%;
+	z-index: 50;
+}
+
+img.MyPosImg {
+    position: absolute;
+    top: 0;
+}
 
 .pac-item-query {
     font-size: 1em;
@@ -1190,4 +1213,3 @@ fieldset#body {
 		right: 4.4em;
    }
 }
-
