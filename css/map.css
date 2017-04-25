@@ -10,10 +10,6 @@ body {
     background: #fff;
 }	
 
-#map_canvas {
-    height: 100%
-}
-
 .mapBtns {
     outline: none;
     border-radius: 10px 5px;
@@ -21,5 +17,3 @@ body {
     font-weight: bold;
     
 }
-
-
