@@ -36,7 +36,7 @@ else
 	print "<div class='alert alert-success'>
                 <strong>Bienvenue $prénom</strong>
                 </div>";
-	
+	AjouterUtilisateur();
 	
 }
 
