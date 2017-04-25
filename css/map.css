@@ -9,10 +9,7 @@ body {
     padding: 0;
     background: #fff;
 }	
-.map_search input[type="textbox"],.map_search input[type="button"]{
-    padding: 20px;
-    font-size: 3em;
-}
+
 
 .mapBtns {
     outline: none;
