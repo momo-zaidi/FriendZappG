@@ -32,7 +32,11 @@ if ($verification !=0)
                 </div>";
 }
 else
-{
+{    
+	print "<div class='alert alert-success'>
+                <strong>Bienvenue $prénom</strong>
+                </div>";
+	
 	
 }
 
