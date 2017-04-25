@@ -23,7 +23,7 @@
 
 }
 }
-VerificationInscription();
+$verification = VerificationInscription();
 
 
  ?>
