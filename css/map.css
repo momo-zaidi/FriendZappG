@@ -6,8 +6,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-    padding: 0;
-    background: #fff;
+    padding: 0
 }	
 
 .mapBtns {
@@ -17,3 +16,13 @@ body {
     font-weight: bold;
     
 }
+
+#map-canvas {
+    height: 100%
+}
+	
+		
+		
+	
+		
+		
