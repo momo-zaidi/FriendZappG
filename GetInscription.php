@@ -23,7 +23,18 @@
 
 }
 }
-$verification = VerificationInscription();
+$verification = VerificationInscription($mail);
+
+if ($verification !=0)
+{
+	print "<div class='alert alert-danger'>
+                <strong>Votre pseudo est déjà utilisé par un membre</strong>
+                </div>";
+}
+else
+{
+	
+}
 
 
  ?>
