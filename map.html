@@ -83,6 +83,7 @@
 			if (navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(function (position) {
 					initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+					map.setZoom(14);
 					map.setCenter(initialLocation);
 				});
 			}
