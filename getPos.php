@@ -1,10 +1,10 @@
-<?php
 
+<script>
 			navigator.geolocation.getCurrentPosition(onSuccess, onError);
-			$geocoder = new google.maps.Geocoder();
-            
+			
+           
 
-			function onSuccess($position) {
+			function onSuccess(position) {
 
 				
 				$data[] = array('latitude'=>position.coords.latitude, 'longitude'=>position.coords.longitude);
@@ -21,4 +21,4 @@
 			}
 			
 
-?>
+</script>
