@@ -725,8 +725,6 @@ fieldset#body {
 	-ms-transition: border-color 0.3s;
 	-moz-transition: border-color 0.3s;
 	-webkit-transition: border-color 0.3s;
-	float: left;
-	width: 65%;
  }
  .column_right_grid span:hover{
  	border:1px solid #11A8AB;
@@ -1059,6 +1057,8 @@ fieldset#body {
 /********* Messages ******/
 .bodymsg{
     margin:0 10px;
+    line-height: 30px;
+    font-weight: 600;
 }
 .discution {
     margin-top: -30px;
@@ -1104,6 +1104,49 @@ fieldset#body {
 .imgmsg{
     float: left;
 }
+.bubble_message {
+    margin-top: -30px;
+}
+.bubble_message li{
+    margin: 15px 5px;
+    width: 65%;
+}
+.bubble_message span{
+    background: #012556;
+    padding: 5px;
+    border-radius: 20px 0px;
+    float: inherit;
+}
+.msg_other{
+   float: left; 
+}
+.msg_me{
+    float:  right;  
+}
+.msg_send{
+    width: 100%;
+}
+.send_msg{
+    width: 15%;
+    float: right;
+    padding: 5px;
+    border-radius: 5px 10px;
+    background: #012556;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    margin-top: 3px;
+}
+.text_to_send{
+    width: 80%;
+    border-radius: 10px 20px;
+    outline: none;
+    padding: 5px;
+    font-size: 1em;
+    color: #012556;
+    font-family: fantasy;
+}
+
 /*----copy-right-----*/
 .copy-right{
 	text-align:center;
@@ -1118,11 +1161,6 @@ fieldset#body {
 }
 .copy-right p a{
 	color:#11A8AB;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
 }
 .copy-right p a:hover{
 	color:#FFF;
