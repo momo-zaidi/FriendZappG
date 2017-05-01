@@ -1080,7 +1080,7 @@ fieldset#body {
     font-family: serif;
     color: #fff;
 }
-.discution img{
+.bodymsg img{
 	border-radius: 20px;
     height: 60px;
 }
@@ -1142,7 +1142,7 @@ fieldset#body {
     border-radius: 10px 20px;
     outline: none;
     padding: 5px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #012556;
     font-family: fantasy;
 }
