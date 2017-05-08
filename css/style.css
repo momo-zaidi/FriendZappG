@@ -430,7 +430,7 @@ fieldset#body {
 }
 /********* Column Middle ***********/
 .column_middle_grid1{
-	background:#394264;
+	background:#1a4e95;
 	border-radius:5px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
@@ -452,7 +452,7 @@ fieldset#body {
 .profile_picture > a > img{
 	display: block;
 	margin:0 auto;
-	border:5px solid #50597B;
+	border:5px solid #fff;
     border-radius:8em;
     -webkit-border-radius:8em;
     -moz-border-radius:8em;
@@ -473,7 +473,7 @@ fieldset#body {
 	line-height:1.6em;
 }
 .articles_list{
-	background:#50597b;
+	background:#1a4e95;
 	text-align:center;
 	border-radius: 0px 0px 5px 5px;
 	-webkit-border-radius: 0px 0px 5px 5px;
@@ -1065,7 +1065,7 @@ fieldset#body {
     font-weight: 600;
 }
 .discution {
-    margin-top: -30px;
+    margin-top: -15px;
 
 }
 .discution li:hover{
@@ -1109,7 +1109,7 @@ fieldset#body {
     float: left;
 }
 .bubble_message {
-    margin-top: -30px;
+    margin-top: -15px;
 }
 .bubble_message li{
     margin: 15px 5px;
@@ -1235,7 +1235,7 @@ fieldset#body {
 		width:95%;
 	}
 	body{
-		margin:30px 0;
+		margin:15px 0;
 	}
 	.column_left, .column_middle, .column_right {
 		float:none;

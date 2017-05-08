@@ -2,11 +2,13 @@
 <widget id="com.phonegap.friendzapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Friendzapp</name>
     <description>
-        A blank PhoneGap app.
+        A app to find his friend.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
+    <plugin name="phonegap-plugin-push" source="npm" spec="~1.8.0">
     <content src="index.html" />
     <access origin="*" />
+    <allow-intent href="geo:*" />
 </widget>
