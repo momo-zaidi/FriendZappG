@@ -1018,6 +1018,10 @@ fieldset#body {
 #title_event{
 	font-size:170%;
 }
+.imgE{
+	border-radius: 30px;
+	margin-top:-15px;
+}
 #col2{
 	border-left-color:#FFF;
 	border-left:solid;
@@ -1064,20 +1068,20 @@ fieldset#body {
     line-height: 30px;
     font-weight: 600;
 }
-.discution {
-    margin-top: -15px;
+.list-menu {
+    margin-top: -30px;
 
 }
-.discution li:hover{
+.list-menu li:hover{
     background: rgba(0, 0, 0, 0.61);
 
 }
-.discution li {
+.list-menu li {
     border-bottom:solid;
     border-bottom-color: #fff;
     height: 100px;
 }
-.discution h4 {
+.list-menu h4 {
     text-align: left;
     font-size: 1.7em;
     font-variant: small-caps;
@@ -1109,7 +1113,7 @@ fieldset#body {
     float: left;
 }
 .bubble_message {
-    margin-top: -15px;
+    margin-top: -30px;
 }
 .bubble_message li{
     margin: 15px 5px;
