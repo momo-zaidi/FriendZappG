@@ -14,8 +14,8 @@
 					else
 					{
 	
- $lastName=$_POST[prenom];
- $firstnName=$_POST[nom];
+ $firstnName=$_POST[prenom];
+ $lastName=$_POST[nom];
  $email=$_POST[maill];
  $password=$_POST[pass];
  $age=$_POST[datenaiss];
@@ -24,7 +24,7 @@
 
 }
 }
-$verification = VerificationInscription($mail);
+$verification = VerificationInscription($email);
 
 if ($verification !=0)
 {
