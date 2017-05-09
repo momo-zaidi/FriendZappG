@@ -1,0 +1,19 @@
+Table Events
+------------
+
+name varchar(45) 
+startDate datetime 
+endDate datetime 
+promoter varchar(45) 
+eventImage varchar(45) 
+private int(11)
+
+Table Users
+-----------
+
+
+idUsers int(11) AI PK 
+lastName varchar(45) 
+firstnName varchar(45) 
+email varchar(45) 
+birthday datetime
