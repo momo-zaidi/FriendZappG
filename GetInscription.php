@@ -14,9 +14,9 @@
 					else
 					{
 	
- $prenom=$_POST[prenom];
- $nom=$_POST[nom];
- $mail=$_POST[maill];
+ $lastName=$_POST[prenom];
+ $firstnName=$_POST[nom];
+ $email=$_POST[maill];
  $password=$_POST[pass];
  $age=$_POST[datenaiss];
 
@@ -34,7 +34,7 @@ if ($verification !=0)
 }
 else
 {    
-	add_user($prenom, $nom, $mail, $password, $age );
+	add_user($lastName, $firstnName, $email, $password, $age );
 	print "<div class='alert alert-success'>
                 <strong>Bienvenue $prénom</strong>
                 </div>";
@@ -44,3 +44,4 @@ else
 
 
  ?>
+-
